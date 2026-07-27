@@ -1,0 +1,126 @@
+:root {
+
+  --body-bg: linear-gradient(80deg, #87c8d0, #B2B5E0);
+
+  --card-bg: #ffffff;
+
+  --text-color: #222222;
+
+  --secondary-text: #555555;
+
+  --navbar-bg: #2C748C;
+
+  --footer-bg: #111111;
+
+  --primary-blue: #043082;
+
+  --gold: #b5a33b;
+
+  --border-color: #dddddd;
+
+  --shadow: rgba(0,0,0,0.12);
+
+}
+
+[data-theme="dark"] {
+
+  --body-bg: linear-gradient(135deg, #0F172A, #1E293B);
+
+  --card-bg: #1E293B;
+
+  --text-color: #F8FAFC;
+
+  --secondary-text: #CBD5E1;
+
+  --navbar-bg: #111827;
+
+  --footer-bg: #020617;
+
+  --primary-blue: #60A5FA;
+
+  --gold: #D4AF37;
+
+  --border-color: #334155;
+
+  --shadow: rgba(0,0,0,0.45);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  transition:
+    background-color .35s ease,
+    color .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+
+  background: var(--body-bg);
+  color: var(--text-color);
+
+  transition:
+    background .4s ease,
+    color .4s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+}

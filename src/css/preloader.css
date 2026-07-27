@@ -1,0 +1,126 @@
+.preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* background: linear-gradient(80deg,#87c8d0,#a3a3a3); */
+  background: rgb(166, 220, 246);
+  z-index: 9999;
+}
+
+/* Developer Logo */
+.logo-code{
+  font-size: 90px;
+  font-weight: 800;
+  background: linear-gradient(10deg, #0d3f9d,#ffd43b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+/* Typing Animation */
+.typing-container{
+  display: inline-block;
+}
+
+.typing-text{
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border-right: 3px solid #043082;
+
+  width: 0;
+
+  font-size: 38px;
+  font-weight: 700;
+
+  background: linear-gradient(10deg, #0d3f9d,#ffd43b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation:
+    typing 3s steps(25,end) forwards,
+    blink 0.7s infinite;
+}
+
+/* Subtitle */
+.loading-text{
+  margin-top: 20px;
+
+  font-size: 18px;
+
+  color: #333;
+
+  letter-spacing: 2px;
+
+  animation: fade 1.5s infinite;
+}
+
+/* Typing */
+@keyframes typing{
+  from{
+    width:0;
+  }
+
+  to{
+    width:100%;
+  }
+}
+
+/* Cursor Blink */
+@keyframes blink{
+  50%{
+    border-color: transparent;
+  }
+}
+
+/* Fade Effect */
+@keyframes fade{
+  0%{
+    opacity:0.3;
+  }
+
+  50%{
+    opacity:1;
+  }
+
+  100%{
+    opacity:0.3;
+  }
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+  .logo-code{
+    font-size:60px;
+  }
+
+  .typing-text{
+    font-size:22px;
+  }
+
+  .loading-text{
+    font-size:14px;
+    text-align:center;
+  }
+
+}
+
+/* Tablet */
+@media(min-width:769px) and (max-width:1024px){
+
+  .typing-text{
+    font-size:30px;
+  }
+
+}

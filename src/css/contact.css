@@ -1,0 +1,277 @@
+.contact-container {
+  padding: 60px 80px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--body-bg);
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.contact-subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--secondary-text);
+  font-size: 16px;
+}
+
+.contact-wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contact-form {
+  height: 550px;
+  flex: 1;
+
+  background: var(--card-bg);
+
+  padding: 50px 60px;
+  border-radius: 15px;
+
+  box-shadow: 0 10px 30px var(--shadow);
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  transition: 0.3s ease;
+
+  border: 1px solid var(--border-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+
+  padding: 14px;
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 10px;
+
+  outline: none;
+
+  font-size: 15px;
+
+  background: var(--card-bg);
+
+  color: var(--text-color);
+
+  transition: 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--secondary-text);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 10px rgba(4, 48, 130, 0.15);
+}
+
+.contact-form button {
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: var(--gold);
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(100deg, var(--primary-blue), #ffd43b);
+  transform: translateY(-2px);
+}
+
+.contact-grid {
+  flex: 1;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+.contact-card {
+  background: var(--card-bg);
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  color: var(--text-color);
+
+  box-shadow: 0 10px 25px var(--shadow);
+
+  border: 1px solid var(--border-color);
+
+  transition: all 0.3s ease;
+
+  min-height: 170px;
+}
+
+.contact-card svg {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-card h3 {
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.contact-card p {
+  font-size: 14px;
+  color: var(--secondary-text);
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(10deg, #306998, #ffd43b);
+  color: #ffffff;
+}
+
+.contact-card:hover h3,
+.contact-card:hover p,
+.contact-card:hover svg {
+  color: #ffffff;
+}
+
+.whatsapp {
+  color: #25D366;
+}
+
+@media (max-width: 768px) {
+
+  .contact-container {
+    padding: 30px 18px;
+  }
+
+  .contact-title {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .contact-subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+    padding: 0 5px;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .contact-form {
+    width: 100%;
+    height: auto;
+
+    padding: 25px 20px;
+
+    gap: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    font-size: 15px;
+    padding: 13px;
+  }
+
+  .contact-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .contact-card {
+    width: 100%;
+    min-height: 140px;
+    padding: 20px;
+  }
+
+  .contact-card svg {
+    font-size: 24px;
+  }
+
+  .contact-card h3 {
+    font-size: 18px;
+  }
+
+  .contact-card p {
+    font-size: 13px;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .contact-container {
+    padding: 40px 35px;
+  }
+
+  .contact-title {
+    font-size: 34px;
+  }
+
+  .contact-subtitle {
+    margin-bottom: 35px;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-form {
+    width: 100%;
+    height: auto;
+
+    padding: 35px;
+
+    gap: 25px;
+  }
+
+  .contact-grid {
+    width: 100%;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+  }
+
+  .contact-card {
+    min-height: 160px;
+  }
+
+}
