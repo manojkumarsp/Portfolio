@@ -35,7 +35,7 @@ const handleSubmit = async (e) => {
   try {
 
     const response = await axios.post(
-      "https://portfolio-backend-y883.onrender.com/api/contact/",
+      // "https://portfolio-backend-y883.onrender.com/api/contact/",
       formData
     );
 
@@ -196,7 +196,7 @@ const handleSubmit = async (e) => {
 
           {/* LINKEDIN */}
           <motion.a
-            href="https://linkedin.com/in/surea"
+            href="www.linkedin.com/in/manojkumar-sp"
             target="_blank"
             rel="noreferrer"
             className="contact-card"

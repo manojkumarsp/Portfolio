@@ -12,18 +12,14 @@ function Projects() {
     },
     {
       title: "Online Voting System",
-      description: "Python Tkinter based online examination platform",
+      description: "Secure online voting with real-time election results.",
       github: "https://github.com/manojkumarsp/online_voting_system"
     },
-    // {
-    //   title: "2d Chess Game",
-    //   description: "Chess game developed using Python pygame package",
-    //   github: "https://github.com/SURENDAR-DHARMALINGAM/2d_chess_game"
-    // },
+  
     {
       title: "Portfolio",
       description: "Fully responsive portfolio developed using React.js",
-      // github: "https://github.com/SURENDAR-DHARMALINGAM/portfolio"
+      github: "https://github.com/manojkumarsp/Portfolio"
     },
   ];
 
