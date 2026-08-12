@@ -196,7 +196,7 @@ const handleSubmit = async (e) => {
 
           {/* LINKEDIN */}
           <motion.a
-            href="www.linkedin.com/in/manojkumar-sp"
+            href="https://linkedin.com/in/manojkumar-sp"
             target="_blank"
             rel="noreferrer"
             className="contact-card"
