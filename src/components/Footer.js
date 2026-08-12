@@ -28,7 +28,7 @@ function Footer() {
             <FaGithub /> GitHub
           </a>
 
-          <a href="www.linkedin.com/in/manojkumar-sp" target="_blank" rel="noreferrer" className="social-item linkedin">
+          <a href="https://linkedin.com/in/manojkumar-sp" target="_blank" rel="noreferrer" className="social-item linkedin">
             <FaLinkedin /> LinkedIn
           </a>
 
